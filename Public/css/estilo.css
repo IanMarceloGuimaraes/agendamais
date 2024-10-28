@@ -1,0 +1,126 @@
+body {
+  font-family: 'Sora', Arial, sans-serif;
+  background-color: #f6f6f6;
+  color: #181818;
+  position: relative;
+  overflow: hidden;
+}
+.header-image {
+  max-width: 80px;
+  height: auto; 
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #181818;
+} 
+p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #181818;
+}
+.container {
+  max-width: 1200px;
+  margin-left: 5%;
+  padding: 20px;
+}
+.content {
+  margin-top: 100px;
+}
+
+.button {
+  background-color: #181818;
+  color: #f8f8f8;
+  padding: 7.5px 50px;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 20px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.button:hover {
+  background-color: #dadada;
+  color: #181818;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+  max-width: 500px;
+  width: 100%;
+}
+
+.form input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12.5px;
+  margin: 15px 0;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #181818;
+}
+
+.form input::placeholder {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(24, 24, 24, 0.4);
+}
+
+/* Formas com gradiente*/
+body::before,
+body::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+body::before {
+  width: 550px;
+  height: 550px;
+  top: -275px;
+  left: -275px;
+  background: radial-gradient(circle, rgba(235, 121, 95, 0.8) 0%, rgba(235, 121, 95, 0) 70%);
+}
+body::after {
+  width: 550px;
+  height: 550px;
+  bottom: -275px;
+  right: -275px;
+  background: radial-gradient(circle, rgba(23, 255, 192, 0.7) 0%, rgba(23, 255, 192, 0) 70%);
+}
+
+
+img {
+  max-width: 900px; 
+  height: auto; 
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
