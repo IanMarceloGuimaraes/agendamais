@@ -1,8 +1,22 @@
 <?php
-// Configurações básicas do projeto
+class Database {
+    private $host = DB_HOST;
+    private $db_name = DB_NAME;
+    private $username = DB_USER;
+    private $password = DB_PASS;
+    public $conn;
 
-// Exemplo de configuração de conexão com banco de dados (caso precise)
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', 'ifro');
-define('DB_NAME', 'agendamais');
+    public function getConnection() {
+        $this->conn = null;
+
+        try {
+            $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
+            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch(PDOException $exception) {
+            echo "Erro de conexão: " . $exception->getMessage();
+        }
+
+        return $this->conn;
+    }
+}
+?>
