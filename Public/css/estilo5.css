@@ -3,15 +3,24 @@ body {
   background-color: #f6f6f6;
   color: #181818;
   position: relative;
-  overflow: hidden;
 }
 .header-image {
   max-width: 80px;
   height: auto; 
-  position: absolute;
+  position: fixed;
   top: 5%;
   left: 5%;
-  z-index: 1;
+  z-index: 10;
+}
+
+.header-text {
+  position: fixed;
+  top: 7%; /* Mantém o texto logo abaixo da imagem */
+  left: 5%;
+  font-size: 1.175rem; /* Tamanho do texto */
+  font-weight: 600;
+  color: #000000;
+  z-index: 10;
 }
 
 h1 {
@@ -24,10 +33,20 @@ p {
   font-weight: 600;
   color: #181818;
 }
+a {
+  font-weight: 1000;
+  color:#634741;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+a:hover {
+  color:#356b5d;
+}
 .container {
   max-width: 1200px;
   margin-left: 5%;
-  padding: 20px;
+  margin-top: 1%;
+  padding: 10px;
 }
 .content {
   margin-top: 100px;
@@ -43,10 +62,10 @@ p {
   display: inline-block;
   margin-top: 20px;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, color 0.3s ease;
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .button:hover {
@@ -89,38 +108,60 @@ p {
   color: rgba(24, 24, 24, 0.4);
 }
 
-/* Formas com gradiente*/
+/* Formas com gradiente */
 body::before,
 body::after {
   content: '';
-  position: absolute;
+  position: fixed; /* Alterado para 'fixed' para manter as esferas no lugar ao rolar */
   border-radius: 50%;
   opacity: 0.8;
-  z-index: -1;
+  z-index: -2;
 }
 
 body::before {
   width: 550px;
   height: 550px;
-  top: -275px;
-  left: -275px;
+  top: -225px;
+  left: -225px;
   background: radial-gradient(circle, rgba(235, 121, 95, 0.8) 0%, rgba(235, 121, 95, 0) 70%);
 }
+
 body::after {
   width: 550px;
   height: 550px;
-  bottom: -275px;
-  right: -275px;
+  bottom: -225px;
+  right: -225px;
   background: radial-gradient(circle, rgba(23, 255, 192, 0.7) 0%, rgba(23, 255, 192, 0) 70%);
 }
 
 
 img {
   max-width: 900px; 
+  width: 50vw; /* Ajuste inicial para a largura relativa */
   height: auto; 
   position: absolute;
   top: 50%;
   right: 5%;
   transform: translateY(-50%);
   z-index: -1;
+}
+
+@media (max-width: 768px) {
+  img {
+    max-width: 70vw; /* Ajuste para telas médias */
+    right: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  img {
+    max-width: 90vw; /* Ajuste para telas pequenas */
+    right: 15%;
+  }
+}
+@media (max-width: 525px) {
+  .form input {
+    max-width: 90%; /* Ajuste a largura do input para 90% do contêiner */
+    font-size: 0.9rem; /* Reduza o tamanho da fonte se necessário */
+  }
 }
