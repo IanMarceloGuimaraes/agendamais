@@ -1,9 +1,3 @@
-<?php include 'includes/header.php'; ?>
+<?php include 'includes/main.php'; ?>
 
-<div class="container">
-    <div class="content" style="display: flex; align-items: flex-start;">
-        <p>Cuscuz Paulista</p>
-    </div>
-</div>
-
-<?php include 'includes/footer.php'; ?>
+    <?php include 'includes/footer.php'; ?>

@@ -1,4 +1,4 @@
-<?php include 'includes/header.php'; ?>
+<?php include 'includes/auth.php'; ?>
 
 <div class="container">
     <div class="content" style="display: flex; align-items: flex-start;">
@@ -7,7 +7,7 @@
             <a href="<?= URL ?>/Usuarios/cadastro"><button class="button">Criar conta</button></a>
 
             <p>Ou faça o login:</p>
-            <form action="/Agenda+/Public/login" method="post" class="form">
+            <form action="<?= URL ?>/Usuarios/home" method="post" class="form">
                 <input type="email" name="email" placeholder="Email *" required>
                 <input type="password" name="senha" placeholder="Senha *" required>
                 <button type="submit" class="button">Entrar</button>

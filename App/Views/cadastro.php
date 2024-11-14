@@ -1,4 +1,4 @@
-<?php include 'includes/header.php'; ?>
+<?php include 'includes/auth.php'; ?>
 
 <div class="container">
     <div class="content" style="display: flex; align-items: flex-start;">
