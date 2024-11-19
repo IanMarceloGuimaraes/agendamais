@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda+</title>
-    <link rel="stylesheet" href="<?= URL ?>/Public/css/main5.css">
+    <link rel="stylesheet" href="<?= URL ?>/Public/css/main7.css">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
 
@@ -16,10 +16,9 @@
         <p class="header-text">Agenda+</p>
 
         <div class="pesquisa-header">
-    <img src="<?= URL ?>/Public/images/main/header/lupa.png" alt="Lupa" class="icone-lupa">
-    <input type="text" placeholder="Procure por Matéria" class="barra-pesquisa">
-</div>
-
+            <img src="<?= URL ?>/Public/images/main/header/lupa.png" alt="Lupa" class="icone-lupa">
+            <input type="text" placeholder="Procure por Matéria" class="barra-pesquisa">
+        </div>
 
         <div class="botoes-header">
             <button class="btn">
@@ -78,7 +77,6 @@
                 <span class="texto-sair">Sair</span>
             </button>
         </div>
-
-    <div>
+    </div>
 </div>
 </html>

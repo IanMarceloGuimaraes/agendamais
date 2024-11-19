@@ -1,0 +1,150 @@
+/* Estilos gerais */
+/* Espaçamento para o conteúdo principal */
+.container {
+  margin-left: 260px; /* Espaço para a barra lateral (largura dela + um pouco mais) */
+  margin-top: 13vh;   /* Espaço para o header fixo */
+  padding: 20px;
+}
+
+/* Ajustar para que o conteúdo principal não seja soterrado */
+.content {
+  margin-top: 2rem; /* Adiciona espaçamento extra, se necessário */
+}
+
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.calendario,
+.suas-metas,
+.proximos-dias {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.calendario {
+  grid-column: 1 / span 1;
+}
+
+.suas-metas {
+  grid-column: 2 / span 1;
+  margin-bottom: 20px;
+}
+
+.proximos-dias {
+  grid-column: 2 / span 1;
+}
+
+/* Títulos */
+h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #333333;
+}
+
+/* Calendário */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table th {
+  font-weight: bold;
+  color: #ff0000;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+}
+
+table .highlight {
+  background-color: #f44336;
+  color: #ffffff;
+  border-radius: 50%;
+}
+
+/* Metas */
+.suas-metas .meta p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Próximos dias */
+.proximos-dias ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.proximos-dias li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333333;
+}
+
+.tag {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.tag.rosa {
+  background-color: #ff69b4;
+}
+
+.tag.azul {
+  background-color: #87cefa;
+}
+
+.tag.laranja {
+  background-color: #ffa500;
+}
+
+.tag.amarelo {
+  background-color: #ffd700;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .suas-metas,
+  .proximos-dias {
+    margin-bottom: 20px;
+  }
+}
+
+.calendario td {
+  border: none;
+}
+.calendario td.hoje {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: red;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.secoes-abaixo {
+  margin-top: 10px;
+}
+.secoes-abaixo div {
+  margin-bottom: 5px;
+}

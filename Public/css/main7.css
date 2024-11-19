@@ -36,7 +36,6 @@ span {
   margin-top: 100px;
 }
 
-
 /* Header */
 .header {
   display: flex;
@@ -254,3 +253,7 @@ body::after {
   right: -225px;
   background: radial-gradient(circle, rgba(23, 255, 192, 0.7) 0%, rgba(23, 255, 192, 0) 70%);
 }
+
+
+
+
