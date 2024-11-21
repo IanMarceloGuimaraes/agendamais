@@ -1,17 +1,4 @@
 /* Estilos gerais */
-/* Espaçamento para o conteúdo principal */
-.container {
-  margin-left: 260px; /* Espaço para a barra lateral (largura dela + um pouco mais) */
-  margin-top: 13vh;   /* Espaço para o header fixo */
-  padding: 20px;
-}
-
-/* Ajustar para que o conteúdo principal não seja soterrado */
-.content {
-  margin-top: 2rem; /* Adiciona espaçamento extra, se necessário */
-}
-
-
 .dashboard {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -97,7 +84,7 @@ table .highlight {
   display: inline-block;
   width: 14px;
   height: 14px;
-  border-radius: 50%;
+  border-radius: 25px;
   margin-right: 10px;
 }
 
@@ -135,7 +122,7 @@ table .highlight {
 .calendario td.hoje {
   width: 40px;
   height: 40px;
-  border-radius: 100%;
+  border-radius: 1000px;
   background-color: red;
   color: white;
   display: flex;

@@ -12,12 +12,21 @@ body {
   left: 5%;
   z-index: 10;
 }
-
+img {
+  max-width: 900px; 
+  width: 50vw;
+  height: auto; 
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
 .header-text {
   position: fixed;
-  top: 7%; /* Mantém o texto logo abaixo da imagem */
+  top: 7%;
   left: 5%;
-  font-size: 1.175rem; /* Tamanho do texto */
+  font-size: 1.175rem;
   font-weight: 600;
   color: #000000;
   z-index: 10;

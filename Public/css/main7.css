@@ -7,6 +7,11 @@ body {
   margin: 0;
   padding: 0;
 }
+
+a {
+  text-decoration: none;
+}
+
 p{
   font-size: 1.25rem;
   font-weight: 600;
@@ -254,6 +259,15 @@ body::after {
   background: radial-gradient(circle, rgba(23, 255, 192, 0.7) 0%, rgba(23, 255, 192, 0) 70%);
 }
 
+/* Estilo pro conteúdo não ficar enterrado pelo header e a barra-lateral */
+.container {
+  margin-left: 260px;
+  margin-top: 13vh;
+  padding: 20px;
+}
 
+.content {
+  margin-top: 2rem;
+}
 
 
