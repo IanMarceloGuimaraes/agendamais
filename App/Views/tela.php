@@ -49,6 +49,30 @@
         </ul>
       </div>
 
+      <div class="eu finjo">
+        <div id="que não" class="percebo">
+          <span class="detalhe">Eu finjo que não percebo...</span> 
+          <div class="observacao">
+            Mas tudo está sendo observado, o esperto se faz de bobo pra ver até onde o burro se faz de inteligente. 
+            <span class="camada-oculta">
+              Nesse jogo sutil, cada movimento é estratégico, e cada palavra tem um significado oculto.
+            </span>
+          </div>
+          <p class="reflexao">
+            Por trás do meu sorriso sereno, estou atento a cada detalhe, absorvendo informações e compreendendo motivações. 
+            Aprendi que nem sempre é prudente revelar todas as cartas que tenho na manga, pois o conhecimento é poder, 
+            e a paciência, uma virtude. Às vezes, é mais fácil agir com descrição, permitindo que outros revelem suas intenções sem interferência.
+          </p>
+          <div class="foco">
+            Afinal, a melhor defesa é a percepção aguçada, capaz de desvendar as tramas sutis que permeiam as interações humanas.
+          </div>
+          <p class="final">
+            Enquanto alguns tentam me iludir com suas artimanhas, observo calmamente, ciente de que minha aparente ingenuidade 
+            é apenas uma estratégia para extrair informações e desvendar as camadas ocultas das personalidades alheias.
+          </p>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>

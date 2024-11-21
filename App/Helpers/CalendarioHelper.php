@@ -38,4 +38,58 @@ class CalendarioHelper
 
         echo "</tr></tbody></table>";
     }
+
+    public static function exibirAtividades($atividades){
+        // Define o local para português
+        setlocale(LC_TIME, 'pt_BR.utf8', 'pt_BR', 'portuguese');
+
+        // Datas importantes
+        $hoje = date('Y-m-d');
+        $amanha = date('Y-m-d', strtotime('+1 day'));
+        $ontem = date('Y-m-d', strtotime('-1 day'));
+        $anteontem = date('Y-m-d', strtotime('-2 days'));
+
+        foreach ($atividades as $data => $descricao) {
+            $dataTimestamp = strtotime($data);
+            $mesmoAno = date('Y', $dataTimestamp) == date('Y');
+            $formato = $mesmoAno ? '%d de %B' : '%d de %B de %Y';
+            $dataFormatada = ucfirst(strftime($formato, $dataTimestamp));
+
+            // Divide a descrição em partes
+            [$materia, $atividade, $hora] = explode(' - ', $descricao);
+
+            // Determina o rótulo
+            if ($data == $hoje) {
+                $rotulo = 'Hoje';
+            } elseif ($data == $amanha) {
+                $rotulo = 'Amanhã';
+            } elseif ($data == $ontem) {
+                $rotulo = 'Ontem';
+            } elseif ($data == $anteontem) {
+                $rotulo = 'Anteontem';
+            } else {
+                $rotulo = $dataFormatada;
+            }
+
+            // Gera o HTML
+            echo "<div class='atividade'>
+                <div class='rotulo'>$rotulo</div>
+                <div class='detalhes'>
+                    <div class='materia'>
+                        <strong>$materia</strong>
+                        <span>$atividade</span>
+                    </div>
+                    <div class='data'>
+                        <strong>Data</strong>
+                        <span>$dataFormatada</span>
+                    </div>
+                    <div class='hora'>
+                        <strong>Hora</strong>
+                        <span>$hora</span>
+                    </div>
+                </div>
+            </div>";
+        }
+    }
+
 }
