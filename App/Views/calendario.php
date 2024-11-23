@@ -1,7 +1,7 @@
 <?php include 'includes/main.php'; ?>
 
 <link rel="stylesheet" href="<?= URL ?>/Public/css/paginas2.css">
-<link rel="stylesheet" href="<?= URL ?>/Public/css/calendario.css">
+<link rel="stylesheet" href="<?= URL ?>/Public/css/calendario2.css">
 
 <div class="container">
   <div class="content"> 
@@ -27,3 +27,5 @@
     </div>
   </div>
 </div>
+
+<?php include 'includes/footer.php'; ?>

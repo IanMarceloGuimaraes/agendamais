@@ -12,7 +12,7 @@
 <body>
     <div class="header">
 
-        <img src="<?= URL ?>/Public/images/Agenda.png" alt="Agenda" class="header-image">
+        <img src="<?= URL ?>/Public/images/Agenda.png" alt="Ícone Agenda+" class="header-image">
         <p class="header-text">Agenda+</p>
 
         <div class="pesquisa-header">
@@ -23,17 +23,17 @@
         <div class="botoes-header">
             <a href="<?= URL ?>/Usuarios/notificacoes">
                 <button class="btn">
-                    <img src="<?= URL ?>/Public/images/main/header/notificacoes.png" alt="placeholder icon" class="icone-btn">
+                    <img src="<?= URL ?>/Public/images/main/header/notificacoes.png" alt="Notifcações" class="icone-btn">
                 </button>
             </a>
             <a href="<?= URL ?>/Usuarios/configuracoes">
                 <button class="btn">
-                    <img src="<?= URL ?>/Public/images/main/header/configuracoes1.png" alt="placeholder icon" class="icone-btn">
+                    <img src="<?= URL ?>/Public/images/main/header/configuracoes1.png" alt="Configurações" class="icone-btn">
                 </button>
             </a>
             <a href="<?= URL ?>/Usuarios/usuario">
                 <button class="btn">
-                    <img src="<?= URL ?>/Public/images/main/header/perfil1.png" alt="placeholder icon" class="icone-btn">
+                    <img src="<?= URL ?>/Public/images/main/header/perfil1.png" alt="Perfil" class="icone-btn">
                 </button>
             </a>
         </div>
@@ -46,25 +46,25 @@
         <div class="botoes-bala">
             <a href="<?= URL ?>/Usuarios/home">
                 <button class="btl">
-                    <img src="<?= URL ?>/Public/images/main/barra-lateral/home.png" alt="placeholder icon" class="icone-btl">
+                    <img src="<?= URL ?>/Public/images/main/barra-lateral/home.png" alt="Home" class="icone-btl">
                     <span>Início</span>
                 </button>
             </a>
             <a href="<?= URL ?>/Usuarios/materias">
                 <button class="btl">
-                    <img src="<?= URL ?>/Public/images/main/barra-lateral/materias.png" alt="placeholder icon" class="icone-btl">
+                    <img src="<?= URL ?>/Public/images/main/barra-lateral/materias.png" alt="Matérias" class="icone-btl">
                     <span>Matérias</span>
                 </button>
             </a>
             <a href="<?= URL ?>/Usuarios/notas">
                 <button class="btl">
-                    <img src="<?= URL ?>/Public/images/main/barra-lateral/notas.png" alt="placeholder icon" class="icone-btl">
+                    <img src="<?= URL ?>/Public/images/main/barra-lateral/notas.png" alt="Notas" class="icone-btl">
                     <span>Notas</span>
                 </button>
             </a>
             <a href="<?= URL ?>/Usuarios/calendario">
                 <button class="btl">
-                    <img src="<?= URL ?>/Public/images/main/barra-lateral/calendario.png" alt="placeholder icon" class="icone-btl">
+                    <img src="<?= URL ?>/Public/images/main/barra-lateral/calendario.png" alt="Calendário" class="icone-btl">
                     <span>Calendário</span>
                 </button>
             </a>
@@ -74,13 +74,13 @@
         <div class="botoes-bala">
             <a href="<?= URL ?>/Usuarios/configuracoes">
                 <button class="btl">
-                    <img src="<?= URL ?>/Public/images/main/barra-lateral/configuracoes.png" alt="placeholder icon" class="icone-btl">
+                    <img src="<?= URL ?>/Public/images/main/barra-lateral/configuracoes.png" alt="Configurações" class="icone-btl">
                     <span>Configurações</span>
                 </button>
             </a>
             <a href="<?= URL ?>/Usuarios/ajuda">
                 <button class="btl">
-                    <img src="<?= URL ?>/Public/images/main/barra-lateral/ajuda.png" alt="placeholder icon" class="icone-btl">
+                    <img src="<?= URL ?>/Public/images/main/barra-lateral/ajuda.png" alt="Ajuda" class="icone-btl">
                     <span>Ajuda</span>
                 </button>
             </a>
